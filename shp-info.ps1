@@ -4,7 +4,7 @@ Add-Type -AssemblyName System.Drawing
 $Fenster = New-Object System.Windows.Forms.Form
 $Fenster.Text = "Shps Computer-Info"
 $Fenster.Width = 500
-$Fenster.Height = 400
+$Fenster.Height = 200
 $Fenster.AutoSize = $True
 $ShpFont =  "Segoe UI, 10"
 
@@ -19,7 +19,7 @@ function Write-Label ( [string]$OutText, $Y_Pos ) {
 
 Write-Label "Klicken Sie auf den Button unten, um die Daten des PCs zu laden!" 10
 $Button = New-Object System.Windows.Forms.Button
-$Button.Location = New-Object System.Drawing.Point(10, 400)
+$Button.Location = New-Object System.Drawing.Point(10, $Fenster.Height)
 $Button.Text = "PC-Daten anzeigen"
 $Button.AutoSize = $True
 $Button.Font = $ShpFont
