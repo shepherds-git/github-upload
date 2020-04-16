@@ -6,7 +6,7 @@ $Fenster.Text = "Shps Computer-Info"
 $Fenster.Width = 500
 $Fenster.Height = 400
 $Fenster.AutoSize = $True
-$ShpFont =  New-Object System.Drawing.Font("Segoe UI, 10")
+$ShpFont =  "Segoe UI, 10"
 
 function Write-Label ( [string]$OutText, $Y_Pos ) {
     $Label = New-Object System.Windows.Forms.Label
